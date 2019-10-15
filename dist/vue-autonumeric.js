@@ -1,6 +1,6 @@
 /**
  * vue-autonumeric v1.2.6 (https://github.com/autoNumeric/vue-autoNumeric)
- * © 2018 Alexandre Bonneau <alexandre.bonneau@linuxfr.eu>
+ * © 2019 Alexandre Bonneau <alexandre.bonneau@linuxfr.eu>
  * Released under the MIT License.
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -336,7 +336,7 @@ exports.default = {
             attrs: attributes,
             ref: 'autoNumericElement',
             on: {
-                'autoNumeric:rawValueModified': this.updateVModel
+                input: this.updateVModel
             }
         });
     },
