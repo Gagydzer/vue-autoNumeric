@@ -93,7 +93,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 attrs: attributes,
                 ref  : 'autoNumericElement',
                 on   : {
-                    'autoNumeric:rawValueModified': this.updateVModel,
+                    input: this.updateVModel,
                 },
             });
         },
