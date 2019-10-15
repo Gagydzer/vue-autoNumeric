@@ -1,4 +1,5 @@
 /* global module */
+const path    = require('path');
 
 const merge   = require('deep-assign');
 const webpack = require('webpack');
@@ -24,9 +25,10 @@ const config = merge(base, {
     ],
 
     devServer: {
-        contentBase       : options.paths.output.examples,
+        contentBase       : path.join(__dirname, '..', 'examples'),//options.paths.output.examples,
         host              : 'localhost',
         historyApiFallback: true,
+        port: 8888,
         noInfo            : true,
     },
 });
